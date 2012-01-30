@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="DbV-Bv-zgC">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="UHr-V7-Bdj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fW-vE-i9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="DbV-Bv-zgC" customClass="HypnosisterViewController" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="aDI-GN-ecw">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="buQ-U6-Zrz" customClass="HypnosisView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <inset key="contentInset" minX="0.0" minY="0.0" maxX="320" maxY="920"/>
+                    </scrollView>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="144" y="121"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="HypnosisView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HypnosisView.h"/>
+        </class>
+        <class className="HypnosisterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HypnosisterViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
