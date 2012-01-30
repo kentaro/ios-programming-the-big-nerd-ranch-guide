@@ -76,8 +76,6 @@
     CLLocationCoordinate2D coordinate = [location coordinate];
     MapPoint *point = [[MapPoint alloc]
                        initWithCoordinate:coordinate                                                                           title:[locationTitleField text]];
-
-    // ここで、Sending 'MapPoint *__strong' to parameter of incompatible type 'id <MKAnnotation>'という警告が出るんだけど、どうしたらいいの……
     [worldView addAnnotation:point];
     
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coordinate, 250, 250);

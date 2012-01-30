@@ -11,6 +11,7 @@
 #import <MapKit/Mapkit.h>
 
 @interface MapPoint : NSObject
+<MKAnnotation>
 
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, copy) NSString *title;
