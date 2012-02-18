@@ -10,6 +10,24 @@
 
 @implementation HypnosisView
 
+@synthesize xShift, yShift;
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    
+    if (self) {
+        stripeColor = [[UIColor lightGrayColor] retain];
+    }
+    
+    return self;
+}
+
+- (BOOL)canBecomeFirstResponder 
+{
+    return YES;
+}
+
 - (void)drawRect:(CGRect)rect
 {
     CGRect bounds = [self bounds];
@@ -23,9 +41,12 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 10);
     
-    [[UIColor lightGrayColor] setStroke];
+    [stripeColor setStroke];
     
     for (float currentRadius = maxRadius; currentRadius > 0; currentRadius -= 20) {
+        center.x += xShift;
+        center.y += yShift;
+
         CGContextAddArc(context, center.x, center.y, currentRadius, 0.0, M_PI * 2.0, YES);
         CGContextStrokePath(context);
     }
@@ -45,6 +66,29 @@
     CGContextSetShadowWithColor(context, offset, 2.0, color);
     
     [text drawInRect:textRect withFont:font];
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake) {
+        NSLog(@"shake started");
+        float r, g, b;
+        
+        r = random() % 256 / 256.0;
+        g = random() % 256 / 256.0;
+        b = random() % 256 / 256.0;
+
+        [stripeColor release];
+        stripeColor = [UIColor colorWithRed:r green:g blue:b alpha:1];
+        [stripeColor retain];
+        [self setNeedsDisplay];
+    }
+}
+
+- (void) dealloc
+{
+    [stripeColor release];
+    [super dealloc];
 }
 
 @end
