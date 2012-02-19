@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9676A78F14F08AA600D3D062 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9676A78E14F08AA600D3D062 /* UIKit.framework */; };
+		9676A79114F08AA600D3D062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9676A79014F08AA600D3D062 /* Foundation.framework */; };
+		9676A79314F08AA600D3D062 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9676A79214F08AA600D3D062 /* CoreGraphics.framework */; };
+		9676A79914F08AA600D3D062 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9676A79714F08AA600D3D062 /* InfoPlist.strings */; };
+		9676A79B14F08AA600D3D062 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676A79A14F08AA600D3D062 /* main.m */; };
+		9676A79F14F08AA600D3D062 /* HeavyRotationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676A79E14F08AA600D3D062 /* HeavyRotationAppDelegate.m */; };
+		9676A7A214F08AA600D3D062 /* HeavyRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676A7A114F08AA600D3D062 /* HeavyRotationViewController.m */; };
+		9676A7A514F08AA600D3D062 /* HeavyRotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9676A7A314F08AA600D3D062 /* HeavyRotationViewController.xib */; };
+		9676A7AE14F08E5E00D3D062 /* HeavyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676A7AC14F08E5E00D3D062 /* HeavyViewController.m */; };
+		9676A7AF14F08E5E00D3D062 /* HeavyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9676A7AD14F08E5E00D3D062 /* HeavyViewController.xib */; };
+		9676A7B114F08F3B00D3D062 /* biganki.png in Resources */ = {isa = PBXBuildFile; fileRef = 9676A7B014F08F3B00D3D062 /* biganki.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9676A78A14F08AA600D3D062 /* HeavyRotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeavyRotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9676A78E14F08AA600D3D062 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9676A79014F08AA600D3D062 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9676A79214F08AA600D3D062 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9676A79614F08AA600D3D062 /* HeavyRotation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeavyRotation-Info.plist"; sourceTree = "<group>"; };
+		9676A79814F08AA600D3D062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9676A79A14F08AA600D3D062 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9676A79C14F08AA600D3D062 /* HeavyRotation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeavyRotation-Prefix.pch"; sourceTree = "<group>"; };
+		9676A79D14F08AA600D3D062 /* HeavyRotationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeavyRotationAppDelegate.h; sourceTree = "<group>"; };
+		9676A79E14F08AA600D3D062 /* HeavyRotationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeavyRotationAppDelegate.m; sourceTree = "<group>"; };
+		9676A7A014F08AA600D3D062 /* HeavyRotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeavyRotationViewController.h; sourceTree = "<group>"; };
+		9676A7A114F08AA600D3D062 /* HeavyRotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeavyRotationViewController.m; sourceTree = "<group>"; };
+		9676A7A414F08AA600D3D062 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HeavyRotationViewController.xib; sourceTree = "<group>"; };
+		9676A7AB14F08E5E00D3D062 /* HeavyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeavyViewController.h; sourceTree = "<group>"; };
+		9676A7AC14F08E5E00D3D062 /* HeavyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeavyViewController.m; sourceTree = "<group>"; };
+		9676A7AD14F08E5E00D3D062 /* HeavyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeavyViewController.xib; sourceTree = "<group>"; };
+		9676A7B014F08F3B00D3D062 /* biganki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biganki.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9676A78714F08AA600D3D062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9676A78F14F08AA600D3D062 /* UIKit.framework in Frameworks */,
+				9676A79114F08AA600D3D062 /* Foundation.framework in Frameworks */,
+				9676A79314F08AA600D3D062 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9676A77F14F08AA500D3D062 = {
+			isa = PBXGroup;
+			children = (
+				9676A79414F08AA600D3D062 /* HeavyRotation */,
+				9676A78D14F08AA600D3D062 /* Frameworks */,
+				9676A78B14F08AA600D3D062 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9676A78B14F08AA600D3D062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9676A78A14F08AA600D3D062 /* HeavyRotation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9676A78D14F08AA600D3D062 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9676A78E14F08AA600D3D062 /* UIKit.framework */,
+				9676A79014F08AA600D3D062 /* Foundation.framework */,
+				9676A79214F08AA600D3D062 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9676A79414F08AA600D3D062 /* HeavyRotation */ = {
+			isa = PBXGroup;
+			children = (
+				9676A79D14F08AA600D3D062 /* HeavyRotationAppDelegate.h */,
+				9676A79E14F08AA600D3D062 /* HeavyRotationAppDelegate.m */,
+				9676A7A014F08AA600D3D062 /* HeavyRotationViewController.h */,
+				9676A7A114F08AA600D3D062 /* HeavyRotationViewController.m */,
+				9676A7AB14F08E5E00D3D062 /* HeavyViewController.h */,
+				9676A7AC14F08E5E00D3D062 /* HeavyViewController.m */,
+				9676A7AD14F08E5E00D3D062 /* HeavyViewController.xib */,
+				9676A7B014F08F3B00D3D062 /* biganki.png */,
+				9676A7A314F08AA600D3D062 /* HeavyRotationViewController.xib */,
+				9676A79514F08AA600D3D062 /* Supporting Files */,
+			);
+			path = HeavyRotation;
+			sourceTree = "<group>";
+		};
+		9676A79514F08AA600D3D062 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9676A79614F08AA600D3D062 /* HeavyRotation-Info.plist */,
+				9676A79714F08AA600D3D062 /* InfoPlist.strings */,
+				9676A79A14F08AA600D3D062 /* main.m */,
+				9676A79C14F08AA600D3D062 /* HeavyRotation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9676A78914F08AA600D3D062 /* HeavyRotation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9676A7A814F08AA600D3D062 /* Build configuration list for PBXNativeTarget "HeavyRotation" */;
+			buildPhases = (
+				9676A78614F08AA600D3D062 /* Sources */,
+				9676A78714F08AA600D3D062 /* Frameworks */,
+				9676A78814F08AA600D3D062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeavyRotation;
+			productName = HeavyRotation;
+			productReference = 9676A78A14F08AA600D3D062 /* HeavyRotation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9676A78114F08AA500D3D062 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9676A78414F08AA500D3D062 /* Build configuration list for PBXProject "HeavyRotation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9676A77F14F08AA500D3D062;
+			productRefGroup = 9676A78B14F08AA600D3D062 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9676A78914F08AA600D3D062 /* HeavyRotation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9676A78814F08AA600D3D062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9676A79914F08AA600D3D062 /* InfoPlist.strings in Resources */,
+				9676A7A514F08AA600D3D062 /* HeavyRotationViewController.xib in Resources */,
+				9676A7AF14F08E5E00D3D062 /* HeavyViewController.xib in Resources */,
+				9676A7B114F08F3B00D3D062 /* biganki.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9676A78614F08AA600D3D062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9676A79B14F08AA600D3D062 /* main.m in Sources */,
+				9676A79F14F08AA600D3D062 /* HeavyRotationAppDelegate.m in Sources */,
+				9676A7A214F08AA600D3D062 /* HeavyRotationViewController.m in Sources */,
+				9676A7AE14F08E5E00D3D062 /* HeavyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9676A79714F08AA600D3D062 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9676A79814F08AA600D3D062 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9676A7A314F08AA600D3D062 /* HeavyRotationViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9676A7A414F08AA600D3D062 /* en */,
+			);
+			name = HeavyRotationViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9676A7A614F08AA600D3D062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9676A7A714F08AA600D3D062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9676A7A914F08AA600D3D062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeavyRotation/HeavyRotation-Prefix.pch";
+				INFOPLIST_FILE = "HeavyRotation/HeavyRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9676A7AA14F08AA600D3D062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeavyRotation/HeavyRotation-Prefix.pch";
+				INFOPLIST_FILE = "HeavyRotation/HeavyRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9676A78414F08AA500D3D062 /* Build configuration list for PBXProject "HeavyRotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9676A7A614F08AA600D3D062 /* Debug */,
+				9676A7A714F08AA600D3D062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9676A7A814F08AA600D3D062 /* Build configuration list for PBXNativeTarget "HeavyRotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9676A7A914F08AA600D3D062 /* Debug */,
+				9676A7AA14F08AA600D3D062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9676A78114F08AA500D3D062 /* Project object */;
+}
