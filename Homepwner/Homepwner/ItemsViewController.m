@@ -15,12 +15,29 @@
 - (id)init
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
+
+    if (self) {
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
+                                initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                target:self 
+                                action:@selector(addNewPossession:)];
+        [[self navigationItem] setRightBarButtonItem:bbi];
+        [[self navigationItem] setTitle:@"Homepwner"];
+        [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
+    }
+
     return self;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     return [self init];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[self tableView] reloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -70,27 +87,6 @@ moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
      toIndex:[destinationIndexPath row]];
 }
 
-- (UIView *)headerView
-{
-    if (!headerView) {
-        [[NSBundle mainBundle] loadNibNamed:@"HeaderView"
-                                      owner:self
-                                    options:nil];
-    }
-    
-    return headerView;
-}
-
-- (UIView *)tableView:(UITableView *)tableView
-viewForHeaderInSection:(NSInteger)section {
-    return [self headerView];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView
-heightForHeaderInSection:(NSInteger)section
-{
-    return [[self headerView] bounds].size.height;
-}
 
 - (IBAction)toggleEditingMode:(id)sender
 {
@@ -108,6 +104,16 @@ heightForHeaderInSection:(NSInteger)section
 {
     [[PossessionStore defaultStore] createPossession];
     [[self tableView] reloadData];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ItemDetailViewController *detailViewController = [[ItemDetailViewController alloc] init];
+    
+    NSArray *possesions = [[PossessionStore defaultStore] allPossessions];
+    [detailViewController setPossession:[possesions objectAtIndex:[indexPath row]]];
+    
+    [[self navigationController] pushViewController:detailViewController animated:YES];
 }
 
 @end

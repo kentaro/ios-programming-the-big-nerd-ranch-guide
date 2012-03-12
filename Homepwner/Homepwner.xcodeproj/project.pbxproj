@@ -23,6 +23,8 @@
 		96B1CC1E14F8C6D300961BA6 /* PossessionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B1CC1D14F8C6D200961BA6 /* PossessionStore.m */; };
 		96B1CC2114F8CAB700961BA6 /* Possession.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B1CC2014F8CAB700961BA6 /* Possession.m */; };
 		96B1CC2314F9149B00961BA6 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B1CC2214F9149B00961BA6 /* HeaderView.xib */; };
+		96FE849F150EBA33002A2946 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FE849D150EBA33002A2946 /* ItemDetailViewController.m */; };
+		96FE84A0150EBA33002A2946 /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96FE849E150EBA33002A2946 /* ItemDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		96B1CC1F14F8CAB700961BA6 /* Possession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Possession.h; sourceTree = "<group>"; };
 		96B1CC2014F8CAB700961BA6 /* Possession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Possession.m; sourceTree = "<group>"; };
 		96B1CC2214F9149B00961BA6 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		96FE849C150EBA33002A2946 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		96FE849D150EBA33002A2946 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		96FE849E150EBA33002A2946 /* ItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,9 @@
 				96B1CBF114F8C0F800961BA6 /* HomepwnerAppDelegate.m */,
 				96B1CC1914F8C4E200961BA6 /* ItemsViewController.h */,
 				96B1CC1A14F8C4E200961BA6 /* ItemsViewController.m */,
+				96FE849C150EBA33002A2946 /* ItemDetailViewController.h */,
+				96FE849D150EBA33002A2946 /* ItemDetailViewController.m */,
+				96FE849E150EBA33002A2946 /* ItemDetailViewController.xib */,
 				96B1CBF314F8C0F800961BA6 /* MainStoryboard.storyboard */,
 				96B1CC2214F9149B00961BA6 /* HeaderView.xib */,
 				96B1CC1F14F8CAB700961BA6 /* Possession.h */,
@@ -237,6 +245,7 @@
 				96B1CBEC14F8C0F800961BA6 /* InfoPlist.strings in Resources */,
 				96B1CBF514F8C0F800961BA6 /* MainStoryboard.storyboard in Resources */,
 				96B1CC2314F9149B00961BA6 /* HeaderView.xib in Resources */,
+				96FE84A0150EBA33002A2946 /* ItemDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +285,7 @@
 				96B1CC1B14F8C4E200961BA6 /* ItemsViewController.m in Sources */,
 				96B1CC1E14F8C6D300961BA6 /* PossessionStore.m in Sources */,
 				96B1CC2114F8CAB700961BA6 /* Possession.m in Sources */,
+				96FE849F150EBA33002A2946 /* ItemDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +455,7 @@
 				96B1CC1214F8C0F800961BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96B1CC1314F8C0F800961BA6 /* Build configuration list for PBXNativeTarget "HomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +464,7 @@
 				96B1CC1514F8C0F800961BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
