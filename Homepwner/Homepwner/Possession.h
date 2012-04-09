@@ -6,6 +6,7 @@
 @property (nonatomic, strong, readwrite)NSString *serialNumber;
 @property (nonatomic, readwrite)int valueInDollars;
 @property (nonatomic, strong, readonly)NSDate *dateCreated;
+@property (nonatomic, strong, readwrite)NSString *imageKey;
 
 + (id)randomPossession;
 - (id)initWithPossessionName:(NSString *)name

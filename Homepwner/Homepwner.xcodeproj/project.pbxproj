@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963B822815330C1700C97A93 /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 963B822715330C1700C97A93 /* ImageStore.m */; };
 		96B1CBE214F8C0F800961BA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B1CBE114F8C0F800961BA6 /* UIKit.framework */; };
 		96B1CBE414F8C0F800961BA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B1CBE314F8C0F800961BA6 /* Foundation.framework */; };
 		96B1CBE614F8C0F800961BA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B1CBE514F8C0F800961BA6 /* CoreGraphics.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		963B822615330C1700C97A93 /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
+		963B822715330C1700C97A93 /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
 		96B1CBDD14F8C0F800961BA6 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B1CBE114F8C0F800961BA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96B1CBE314F8C0F800961BA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,12 +127,15 @@
 		96B1CBE714F8C0F800961BA6 /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				96FE84A2150F65EF002A2946 /* New Group */,
 				96B1CBF014F8C0F800961BA6 /* HomepwnerAppDelegate.h */,
 				96B1CBF114F8C0F800961BA6 /* HomepwnerAppDelegate.m */,
 				96B1CC1914F8C4E200961BA6 /* ItemsViewController.h */,
 				96B1CC1A14F8C4E200961BA6 /* ItemsViewController.m */,
 				96FE849C150EBA33002A2946 /* ItemDetailViewController.h */,
 				96FE849D150EBA33002A2946 /* ItemDetailViewController.m */,
+				963B822615330C1700C97A93 /* ImageStore.h */,
+				963B822715330C1700C97A93 /* ImageStore.m */,
 				96FE849E150EBA33002A2946 /* ItemDetailViewController.xib */,
 				96B1CBF314F8C0F800961BA6 /* MainStoryboard.storyboard */,
 				96B1CC2214F9149B00961BA6 /* HeaderView.xib */,
@@ -170,6 +176,13 @@
 				96B1CC0814F8C0F800961BA6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96FE84A2150F65EF002A2946 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +299,7 @@
 				96B1CC1E14F8C6D300961BA6 /* PossessionStore.m in Sources */,
 				96B1CC2114F8CAB700961BA6 /* Possession.m in Sources */,
 				96FE849F150EBA33002A2946 /* ItemDetailViewController.m in Sources */,
+				963B822815330C1700C97A93 /* ImageStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

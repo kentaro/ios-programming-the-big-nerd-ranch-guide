@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import "ImageStore.h"
 #import "ItemDetailViewController.h"
 
 @implementation ItemDetailViewController
@@ -14,6 +15,7 @@
 @synthesize valueField;
 @synthesize dataField;
 @synthesize possession;
+@synthesize imageView;
 
 - (void) viewDidLoad
 {
@@ -35,6 +37,15 @@
     
     [dataField setText:[dateFormatter stringFromDate:[possession dateCreated]]];
     [[self navigationItem] setTitle:[possession possessionName]];
+
+    NSString *imageKey = [possession imageKey];
+    if (imageKey) {
+        UIImage *imageToDisplay = [[ImageStore defaultImageStore] imageForKey:imageKey];
+        [imageView setImage:imageToDisplay];
+    }
+    else {
+        [imageView setImage:nil];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -53,6 +64,7 @@
     [self setValueField:nil];
     [self setDataField:nil];
     [self setPossession:nil];
+    [self setImageView:nil];
     [super viewDidUnload];
 }
 
@@ -60,6 +72,50 @@
 {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (IBAction)backgroundTapped:(id)sender
+{
+    [[self view] endEditing:YES];
+}
+
+- (IBAction)takePicture:(id)sender {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+    }
+    else {
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    }
+    
+    [imagePicker setDelegate:self];
+    [self presentModalViewController:imagePicker animated:YES];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    NSString *oldKey = [possession imageKey];
+    if (oldKey) {
+        [[ImageStore defaultImageStore] deleteImageForKey:oldKey];
+    }
+    
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+
+    CFUUIDRef newUniqueID = CFUUIDCreate(kCFAllocatorDefault);
+    CFStringRef newUniqueIDString = CFUUIDCreateString(kCFAllocatorDefault, newUniqueID);
+    [possession setImageKey:(__bridge NSString *)newUniqueIDString];
+
+    CFRelease(newUniqueIDString);
+    CFRelease(newUniqueID);
+
+    [[ImageStore defaultImageStore] setImage:image
+                                      forKey:[possession imageKey]];
+
+
+    [imageView setImage:image];
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
